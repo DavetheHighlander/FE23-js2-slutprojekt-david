@@ -1,0 +1,88 @@
+<!-- This is the content of register.html -->
+<div id="overlay" class="overlay"></div>
+
+<div id="registerModal" class="registerModal">
+  <div class="register-container">
+    <form id="register-form">
+        <h2>Register</h2>
+        <div class="form-control">
+          <label for="name">name</label>
+          <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-control">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <button id="closeModal" type="submit">Sign In</button>
+    </form>
+  </div>
+<button  id="closeModalRegister" class="closeModal">
+    <i class="fas fa-times"></i>
+  </button>  
+</div>
+
+<style>
+    .overlay {
+      z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired level of transparency */
+    backdrop-filter: blur(8px); /* Adjust the blur value as needed */
+  }
+  .register-container {
+    padding: 20px;
+    padding-left: 0px;
+
+}
+.closeModal {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #fff; /* Optional: Set background color */
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container .form-control {
+    margin-bottom: 15px;
+}
+
+.register-container .form-control label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.register-container .form-control input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.register-container button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+</style>

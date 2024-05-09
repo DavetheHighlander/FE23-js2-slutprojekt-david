@@ -1,0 +1,15 @@
+{
+  "name": "socialMedia",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel ./src/templates/*  ./src/assets/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "typescript": "^5.4.2"
+  }
+}

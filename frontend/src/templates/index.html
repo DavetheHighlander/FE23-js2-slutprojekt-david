@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Media</title>
+    <link rel="stylesheet" href="../style/styles.css">
+    <link rel="stylesheet" href="../style/header.style.css">
+    <link rel="stylesheet" href="../style/container.style.css">
+    <link rel="stylesheet" href="../style/comment.style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <script type="module" src="../app.ts" defer></script>
+    <script src="../assets/default.profile.png"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  </head>
+  <body>
+    <header>
+      <menu>
+        <h1><a href="/">Social Media</a></h1>
+        <div class="headerRight">
+          <div id="loggedInDiv" style="display: none;">
+            <button class="add-post-btn" id="addPostLink">Add Post</button>
+            <button class="add-post-btn" id="MyProfile">My Profile</button>
+            <button class="add-post-btn" id="signOut">sign out</button>
+          </div>
+
+          <li id="unLoggedInDiv" class="dropdown" style="display: none;">
+            <button class="signinButton" id="signinButton">sign in</button>
+
+              <div id="myDropdown" class="dropdown-content">
+                  <div class="dropdown-row">
+                    <a href="#" id="signinLink">sign in</a>
+                  </div>
+                  <div class="dropdown-row">
+                    <a href="#" id="registerLink">register</a>
+                  </div>
+              </div>
+            </li>
+        </div>
+      </menu>
+  </header>
+    <main>
+      <div class="post-list">
+      </div>
+      <div id="modal-container"></div>
+    </main>
+    
+    <div id="user-container"></div>
+    <div id="postDetailsPage"></div>
+    <div id="addPostModalPage"></div>
+    <div id="RegisterModalPage"></div>
+    <div id="LoginModalPage"></div>
+    <div class="dialog-overlay" id="postDialogOverlay"></div>
+
+    <!-- Dialog for adding post -->
+    <div class="modal" id="postModal">
+      <div class="modal-content">
+        <span class="close" id="closePostModal">&times;</span>
+        <form class="post-form" id="postForm" enctype="multipart/form-data">
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title">
+          <label for="content">Content:</label>
+          <textarea id="content" name="content"></textarea>
+          <label for="image">Image:</label>
+          <input type="file" id="image" name="image" accept="image/*">
+          <button type="submit" class="add-post-btn">Add Post</button>
+        </form>
+      </div>
+    </div> 
+
+      <!-- <div  class="PostPage">
+        <div class="post" id="post-container">
+          <h1>Post Title</h1>
+          <div class="author">
+              <img src="../assets/default.profile.png" alt="Author Image">
+              <a href="#" class="author-name">Author Name</a>
+            </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo nec odio convallis fringilla.</p>
+          <p>Posted on: <time>April 9, 2024</time></p>
+          <img class="post-image" src="../assets/default.profile.png" alt="Post Image">
+      </div>
+        
+        <div class="comment">
+            <h3>Username1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget justo nec odio convallis fringilla.</p>
+        </div>
+        
+        <div class="comment">
+            <h3>Username2</h3>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+        </div>
+        
+        <div class="comment">
+            <h3>Username3</h3>
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+        </div>
+        
+        <div class="comment-form">
+            <h2>Add a Comment:</h2>
+            <form>
+                <input type="text" placeholder="Your Name"><br>
+                <textarea placeholder="Your Comment"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>  -->
+
+  </body>
+  </html>

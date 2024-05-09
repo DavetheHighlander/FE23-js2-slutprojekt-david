@@ -1,0 +1,81 @@
+.PostPage {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.post h1 {
+    color: #333;
+    margin-top: 0;
+}
+.post p {
+    color: #666;
+}
+.post .author {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.post .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.post .author .author-name {
+    font-weight: bold;
+}
+.post .post-image {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+}
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.comment h3 {
+    color: #333;
+    margin-top: 0;
+}
+.comment p {
+    color: #666;
+    margin-bottom: 5px;
+}
+.comment-form {
+    width: 100%;
+    margin-top: 20px;
+}
+.comment-form input[type="text"],
+.comment-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.comment-form textarea {
+    height: 100px;
+}
+.comment-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.comment-form input[type="submit"]:hover {
+    background-color: #555;
+}

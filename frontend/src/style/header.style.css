@@ -1,0 +1,134 @@
+header {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    /* padding: 20px 0;
+    height: 50px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 8px;
+
+}
+
+header h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .post-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .post-form input[type="text"],
+  .post-form textarea {
+    width: calc(100% - 16px); /* Subtract padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .post-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .post-form button:hover {
+    background-color: #45a049;
+  }
+
+
+  /* sign in button */
+  
+/* dropdown */
+.signinButton {
+  color: #ffffff;
+  background-color: #4caf50;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .signinButton:hover {
+    color: #ffffff;
+    background-color: #4caf4f76;
+
+
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-row {
+    display: flex;
+    justify-content: space-around; /* This spreads out the items evenly in the row */
+  }
+  .dropdown-content a {
+    flex: 1; /* Each link will take equal amount of space */
+    text-align: center; /* Center the link text */
+    padding: 10px;  
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom:  -220%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    z-index: 1;
+  }
+  
+  .show {display:block;}
